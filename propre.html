@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+  <title>Site de Jabal</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+<!-- jspopup -->  
+<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script> 
+
+<!-- jsslider -->  
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- RESET CSS-->  
+  	<link rel="stylesheet" href="./style/reset.css">  
+  
+<script src="./micromodal.js"></script>
+    
+
+	<!-- styles CSS JABAL -->  
+  	<link rel="stylesheet" href="./style/styles-jabal.css">
+  	
+  	
+  	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+</head>
+
+<body>
+
+	<header>
+		<h1>LES ATELIERS DE JABAL</h1>
+	</header>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+
+
+<main>
+ <div class="container">
+      <div class="item">
+        <h2>Musique</h2>
+	<video controls width="450" width="600">
+  		<source src="/home/remi/sitejabal/chat.mp4"/>	
+	</video>
+		    
+        <video controls width="450" width="600"  >
+        <source  src="/home/remi/sitejabal/vid_percu.mp4" />	
+       </video>	     
+      </div>
+      
+       <div class="item">
+        <h2>News !</h2>    
+      			<!-- Slider main container -->
+		<div class="swiper">
+		  <!-- Additional required wrapper -->
+		  <div class="swiper-wrapper">
+		    <!-- Slides -->
+		    <div class="swiper-slide"> 
+		    	<a href="https://www.example.com" target="_blank">
+			  <img src="/home/remi/Téléchargements/auguste.jpg" class="active" alt="Image 1" width="600" height="600">
+			  </a>
+		    </div>
+		    <div class="swiper-slide">
+		     <a href="https://www.example.com" target="_blank">
+          	     <img src="/home/remi/Téléchargements/moras.jpg" alt="Image 2" width="600" height="600">
+          	     </a>
+		    </div>
+		  </div>
+
+		  <!-- If we need navigation buttons -->
+		  <div class="swiper-button-prev"></div>
+		  <div class="swiper-button-next"></div>
+
+		</div>
+     </div>
+      
+      
+      
+      <div class="item">
+        <h2>Cours de percus</h2>
+        <img src="/home/remi/Téléchargements/imagescalendrier.jpeg" alt="dates de cours" width="300">
+        <img src="/home/remi/Téléchargements/percus.jpeg" alt="dates de cours" width="300">
+      </div>
+    </div>
+
+
+</main>
+
+
+<footer>
+    <p>&copy; jabal@gmail.com - Rue du capitaine marchand 26 000 Valence </p>
+</footer>
+<script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+
+</script>
+</body>
+</html>
